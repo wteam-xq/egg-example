@@ -1,0 +1,56 @@
+@import './p2rem.scss';
+
+.clearfix:after{
+    display:block;
+    clear:both;
+    visibility:hidden;
+    height:0;
+    overflow:hidden;
+    content:".";
+}
+
+body {
+    width: rem(640);
+    margin: 0 auto;
+    background: #efefef;
+	-webkit-box-shadow: 0px 2px 3px #aaaaaa;
+	   -moz-box-shadow: 2px 2px 3px #aaaaaa;
+	        box-shadow: 0px 2px 3px #aaaaaa;
+}
+.inner-shadow{
+  width: 100%;
+  height: rem-base(36px);
+  background: #fff url('../img/shadow.png') repeat-x;
+}
+
+.wrap {
+    background: white;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  animation-name: fadeOut;
+}

@@ -1,0 +1,31 @@
+@import '../common/css/p2rem.scss';
+
+.not-found {
+	padding: rem(100) 0 rem(100) 0;
+	text-align: center;
+	background: #fff;
+
+	p {
+		margin: rem(16) 0 0 0;
+		color: #aaa;
+	}
+	.download {
+		width: rem-base(145px);
+		height: rem-base(34px);
+		line-height: rem-base(34px);
+		background: #F13031;
+		border-radius: rem-base(4px);
+		text-align: center;
+		border-radius: rem-base(4px);
+		margin: rem-base(20px) auto 0;
+		@include font-dpr-base(14px);
+		a {
+			color: #fff;
+			font-weight: bold;
+			text-decoration-line: none;
+		}
+	}
+}
+.index-main .spread-fixed{
+  max-height: 1.93237rem;
+}

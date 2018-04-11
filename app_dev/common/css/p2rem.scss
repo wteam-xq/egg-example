@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+@function rem($px, $base-font-size: 64px) {
+  @if (unitless($px)) {
+    //@warn "Assuming #{$px} to be in pixels, attempting to convert it into pixels for you";
+    @return rem($px + 0px); // That may fail.
+  } @else if (unit($px) == rem) {
+    @return $px;
+  }
+  @return ($px / $base-font-size) * 1rem;
+}
+
+@function rem-base($px, $base-font-size: 41.4px) {
+  @if (unitless($px)) {
+    //@warn "Assuming #{$px} to be in pixels, attempting to convert it into pixels for you";
+    @return rem($px + 0px); // That may fail.
+  } @else if (unit($px) == rem) {
+    @return $px;
+  }
+  @return ($px / $base-font-size) * 1rem;
+}
+
+@mixin font-dpr-base($font-size){
+  font-size: $font-size;
+  [data-dpr="2"] & {
+    font-size: $font-size;
+  }
+  [data-dpr="3"] & {
+    font-size: $font-size * 1.5;
+  }
+}
+
+@mixin font-dpr($font-size){
+  font-size: $font-size / 2;
+  [data-dpr="2"] & {
+    font-size: $font-size;
+  }
+  [data-dpr="3"] & {
+    font-size: $font-size * 1.5;
+  }
+}
+
+@mixin px-dpr($property, $size, $others:""){
+  #{$property}: $size / 2 #{$others};
+  [data-dpr="2"] & {
+    #{$property}: $size #{$others};
+  }
+  [data-dpr="3"] & {
+    #{$property}: $size * 1.5 #{$others};
+  }
+}
