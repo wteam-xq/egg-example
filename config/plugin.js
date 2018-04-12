@@ -7,7 +7,7 @@ exports.nunjucks = {
   package: 'egg-view-nunjucks'
 };
 
-exports.webpack = {
-  enable: true,
-  package: 'egg-webpack'
-};
+// exports.webpack = {
+//   enable: true,
+//   package: 'egg-webpack'
+// };

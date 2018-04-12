@@ -12,9 +12,9 @@ module.exports = appInfo => {
       '.tpl': 'nunjucks',
     },
   };
-  config.webpack = {
-    webpackConfigList: [require('../webpack.config.js')]
-  };
+  // config.webpack = {
+  //   webpackConfigList: [require('../webpack.config.js')]
+  // };
   // add your config here
   config.middleware = [];
 

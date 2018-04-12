@@ -22,7 +22,6 @@
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.3",
     "webpack": "^3.11.0",
-    "webpack-dev-server": "^2.11.1",
     "webstorm-disable-index": "^1.2.0"
   },
   "engines": {
@@ -40,8 +39,7 @@
     "ci": "npm run lint && npm run cov",
     "autod": "autod",
     "webpack": "webpack --watch",
-    "webpack-p": "webpack -p",
-    "webpack-s": "webpack-dev-server"
+    "webpack-p": "webpack -p"
   },
   "ci": {
     "version": "8"

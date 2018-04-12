@@ -1,33 +1,22 @@
-# example
+# Egg + webpack example
 
+## 技术栈
+* node: >=8.9.0；
+* egg.js: 2.x;
+* webpack: 3.x;
 
-
-## QuickStart
-
-<!-- add docs here for user -->
-
-see [egg docs][egg] for more detail.
-
-### Development
-
+## 安装依赖
 ```bash
 $ npm i
-$ npm run dev
-$ open http://localhost:7001/
 ```
 
-### Deploy
-
+## 开发、运行
+运行：
 ```bash
-$ npm start
-$ npm stop
+$ npm run dev
 ```
 
-### npm scripts
-
-- Use `npm run lint` to check code style.
-- Use `npm test` to run unit test.
-- Use `npm run autod` to auto detect dependencies upgrade, see [autod](https://www.npmjs.com/package/autod) for more detail.
-
-
-[egg]: https://eggjs.org
+开发，webpack 编译、监听对应文件变化（另一命令窗口执行）：
+```bash
+$ npm run webpack 
+```
