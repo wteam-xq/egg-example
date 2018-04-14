@@ -1,9 +1,9 @@
 # Egg + webpack example
 
 ## 技术栈
-* node: >=8.9.0；
-* egg.js: 2.x;
-* webpack: 3.x;
+* [nodejs](https://nodejs.org/en/): >=8.9.0；
+* [egg.js](http://eggjs.org/): 2.x;
+* [webpack](https://www.webpackjs.com/): 3.x;
 
 ## 安装依赖
 ```bash
