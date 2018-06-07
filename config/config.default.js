@@ -3,8 +3,10 @@
 module.exports = appInfo => {
   const config = exports = {};
 
+  config.middleware = [ 'init', 'device' ];
+  config.notfound = { pageUrl: '/404' };
   // use for cookie sign key, should change to your own and keep security
-  config.keys = appInfo.name + '_1523171259979_9795';
+  config.keys = appInfo.name + '_2738452383347_3847';
   // 添加 view 配置
   config.view = {
     defaultViewEngine: 'nunjucks',
@@ -12,11 +14,5 @@ module.exports = appInfo => {
       '.tpl': 'nunjucks',
     },
   };
-  // config.webpack = {
-  //   webpackConfigList: [require('../webpack.config.js')]
-  // };
-  // add your config here
-  config.middleware = [];
-
   return config;
 };

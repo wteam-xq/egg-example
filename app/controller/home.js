@@ -3,8 +3,16 @@
 const Controller = require('egg').Controller;
 
 class HomeController extends Controller {
-  async index() {
-    this.ctx.body = 'hi, egg';
+  async index(ctx) {
+    await ctx.render('home.tpl', {
+      title: 'home',
+    });
+  }
+
+  async login(ctx) {
+    await ctx.render('login.tpl', {
+      title: 'egg example login',
+    });
   }
 }
 

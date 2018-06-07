@@ -1,0 +1,40 @@
+#login-wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding-top: 10%;
+  font-family: Open Sans,sans-serif;
+  background: #092756;
+  background: -webkit-radial-gradient(0 100%,ellipse cover,rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%),-webkit-linear-gradient(top,rgba(57,173,219,.25),rgba(42,60,87,.4)),-webkit-linear-gradient(-45deg,#670d10,#092756);
+  background: -webkit-radial-gradient(0 100%,ellipse cover,rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%),linear-gradient(180deg,rgba(57,173,219,.25) 0,rgba(42,60,87,.4)),linear-gradient(135deg,#670d10,#092756);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3E1D6D",endColorstr="#092756",GradientType=1);
+  .ant-checkbox + span {
+    color: #fff;
+  }
+  .ant-form-item-with-help {
+    margin-bottom: 15px;
+  }
+  .title {
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0,0,0,.3);
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  .ant-input-affix-wrapper {
+    .ant-input{
+      min-height: unset;
+      height: 32px;
+    }
+  }
+  .login-form {
+    max-width: 300px;
+    height: 243px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+  .login-form-button {
+    width: 100%;
+  }
+}

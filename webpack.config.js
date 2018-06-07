@@ -2,7 +2,8 @@ const path = require('path');
 
 module.exports = {
   entry: { // 入口起点，可以指定多个入口起点
-    'notfound':  './app_fe/notfound/notfound.js'
+    'base':  './app_fe/base/base.js',
+    'login':  './app_fe/login/login.js'
   },
   output: { // 输出，只可指定一个输出配置
     filename: '[name].js', // 输出文件名
@@ -42,17 +43,14 @@ module.exports = {
             presets: ['env']
           }
         }
-      },
-      { // 增加 js ES6 解析规则
-        test: /\.js$/,
-        exclude: /(node_modules|bower_components)/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: [ 'env' ],
-          },
-        },
       }
     ]
-  }
+  },
+  externals: {
+    'react'        : 'React',
+    'react-dom'    : 'ReactDOM',
+    'antd'         : 'antd',
+    'moment'       : 'moment',
+    'axios'        : 'axios',
+  },
 };
